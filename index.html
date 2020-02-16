@@ -3,10 +3,13 @@
 <head>
     <style>.boss {margin: auto; width: auto</style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <link href = "resume.css" rel="stylesheet" type="text/css" >
+        <link href = "style.css" rel="stylesheet" type="text/css" >
+    
 <title>Resume</title>
 </head>
 <body>
+    
+
 <h1> Resume </h1>
 <h6> Hunter Talkington </h6>
 <div class="boss">
@@ -14,6 +17,17 @@
 <h6>Kent, OH 44242</h6>
 <h6>740-632-1415</h6>
 <h6>htalkin1@kent.edu</h6>
+    <h6><button>Jobs Offered Counter</button></h6>
+    
+        <script type="text/javascript">
+        const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Jobs Offered Counter: ${event.detail}`;
+});
+            
+            
+     </script>    
 </div>
 <h3>Skills</h3>
 <p>Basic Tech Skills (Class Experience)</p>

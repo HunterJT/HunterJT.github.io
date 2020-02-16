@@ -1,6 +1,6 @@
 h1 {width: auto; padding: 100 px; margin: auto}
-h1 {border-bottom:inset;}
 h1 {text-align: center}
 h6 {width: auto; margin: auto; text-align: center}
 * {background-color: lightslategray; font-family: 'Roboto Condensed', sans-serif;}
-p {width: auto; margin: auto}
+p {width: auto; margin: auto; }
+p1{width: auto;margin: auto;font-style:}
