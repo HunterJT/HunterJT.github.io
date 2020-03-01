@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>     
+    
+    
+</head>
+<body>
+    
+    <h4>Everytime you refresh this page you get a new Gif :) </h4>
+    <script>
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=rTErJnia2ZA4TfRYg2ihkytEQhAeituy');
+    
+request.onload = function() {
+    var response = request.response;
+    var parsedData = JSON.parse(response);
+    console.log(parsedData);
+    var gif = parsedData.data.images.preview_gif.url;
+    console.log(gif);
+    var giffy = document.createElement('img');
+    giffy.setAttribute('src', gif);
+    document.body.appendChild(giffy);
+    
+  
+}
+
+request.send();
+        
+    </script>
+    
+
+   
+    
+       
+    
+    
+    
+</body>
+</html>
